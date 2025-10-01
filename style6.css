@@ -1241,3 +1241,258 @@ body {
   background-color: hsl(0, 0%, 100%);
   color: hsl(313, 96%, 37%);
 }
+
+/* ========================================================== */
+/* TABLET RESPONSIVENESS (max-width: 1024px)        */
+/* ========================================================== */
+@media (max-width: 1024px) {
+  /* --- General Container Adjustment for Tablets --- */
+  .first-section-container,
+  .about-container,
+  .Banking-container,
+  .materials,
+  .our-products-container,
+  .sales-container,
+  .wema-pos-container,
+  .custom-card-container,
+  .alatpay-container,
+  .investor-sec,
+  .main-sustainability-container,
+  .testimonial,
+  .blog-maine-container,
+  .building-container,
+  .last-section {
+    width: 90%; /* Increase width to fill more screen space */
+    padding: 0; /* Remove horizontal padding from the container itself */
+  }
+
+  /* --- Header / Navigation --- */
+  .first-section-container {
+    row-gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .wema {
+    /* Reduce gap in the main navigation */
+    column-gap: 0.2rem;
+    flex-wrap: wrap;
+    justify-content: start;
+    font-size: 0.85rem;
+  }
+
+  /* --- Hero Section --- */
+  .Banking-container h1 {
+    font-size: clamp(3rem, 5vw, 4rem); /* Slightly smaller font */
+  }
+
+  /* --- Main Body Stacking --- */
+
+  /* Stack horizontal sections vertically */
+  .three-box-container,
+  .materials,
+  .sales-container,
+  .wema-pos-container,
+  .custom-card-container,
+  .Explore-main-container,
+  .trade-main-container,
+  .sustainability-container,
+  .image-gallary,
+  .test-container,
+  .alat,
+  .article-main-container {
+    flex-direction: column;
+    row-gap: 2rem;
+    column-gap: 0;
+  }
+
+  /* Fix image sizing within stacked containers */
+  .unnamed img,
+  .wema-card img,
+  .alat img {
+    max-width: 100%; /* Ensures they don't overflow */
+  }
+
+  /* Fix box width when stacked */
+  .box {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .sales-container {
+    margin-top: 4rem;
+  }
+
+  /* --- Footer --- */
+  .last-section {
+    flex-direction: column; /* Stack the footer columns */
+    row-gap: 3rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .licensed-main,
+  .Useful-link-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .licensed-main {
+    flex-direction: column;
+  }
+
+  .Useful-link-container {
+    padding: 0;
+  }
+  .useful-link,
+  .accounting {
+    align-items: center;
+  }
+}
+
+/* ========================================================== */
+/* MOBILE RESPONSIVENESS (max-width: 640px)         */
+/* ========================================================== */
+@media (max-width: 640px) {
+  /* --- General Container Adjustment for Mobile --- */
+  .first-section-container,
+  .about-container,
+  .Banking-container,
+  .materials,
+  .our-products-container,
+  .sales-container,
+  .wema-pos-container,
+  .custom-card-container,
+  .alatpay-container,
+  .investor-sec,
+  .main-sustainability-container,
+  .testimonial,
+  .blog-maine-container,
+  .building-container,
+  .last-section {
+    width: 95%; /* Go almost full width */
+  }
+
+  /* --- Header / Navigation --- */
+  .first-section-container {
+    /* Stacks logo and nav/button vertically */
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+  }
+
+  .logo,
+  .button-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 8rem;
+    height: auto;
+  }
+
+  .wema {
+    /* Main nav links stack vertically for mobile */
+    flex-direction: column;
+    row-gap: 0.2rem;
+    align-items: center;
+  }
+
+  .wema a {
+    padding: 0.2rem 0;
+  }
+
+  /* Secondary Nav (About) also stacks/compacts */
+  .about-container {
+    flex-direction: column;
+    row-gap: 0.5rem;
+    align-items: center;
+  }
+
+  .about-container a {
+    font-size: 0.9rem;
+  }
+
+  .search-button {
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+
+  /* --- Hero Section --- */
+  .hero-container {
+    height: 40vh; /* Shorter hero section on mobile */
+  }
+
+  .Banking-container h1 {
+    font-size: clamp(2.5rem, 8vw, 3rem); /* Smaller font on mobile */
+    text-align: center;
+    width: 100%;
+  }
+
+  .learn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* --- Content Sections --- */
+  /* Ensure elements stacked in the 1024px query remain stacked */
+  .three-box-container,
+  .materials,
+  .sales-container,
+  .wema-pos-container,
+  .custom-card-container,
+  .Explore-main-container,
+  .trade-main-container,
+  .sustainability-container,
+  .image-gallary,
+  .test-container,
+  .alat,
+  .article-main-container {
+    row-gap: 1.5rem;
+  }
+
+  .sustainability h1,
+  .customers h1,
+  .blog h1,
+  .video-main h1 {
+    font-size: 1.5rem;
+  }
+
+  .test-container {
+    flex-direction: column;
+  }
+
+  .greatful {
+    height: auto;
+  }
+
+  /* --- Blog Section (Alat) Image and Text Stack */
+  .alat img {
+    width: 100%;
+  }
+
+  /* --- Footer --- */
+  .last-section {
+    /* Already stacked from tablet query, just ensure center alignment */
+    align-items: center;
+    text-align: center;
+  }
+
+  .licensed-main {
+    row-gap: 1rem;
+  }
+
+  .cbn {
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  .social-media,
+  .download-app {
+    /* Ensure social media and download buttons are centered */
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
