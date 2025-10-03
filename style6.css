@@ -282,7 +282,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: -1.2rem;
   background-color: hsl(323, 98%, 16%);
   padding-top: 3rem;
   padding-bottom: 3rem;
